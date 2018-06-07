@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <title>我的简历</title>
+    <link rel="stylesheet" type="text/css" href="resume.css" />20
+  </head>
+  <body>
+  <h1>个人简历</h1>
+<div>
+  <p class="p1">个人信息介绍：</p>
+  <ul class="p2">
+    <li>姓名：古德立式</li>
+    <li>学历：本科</li>
+    <li>特长：会使用python js c ,对sql有一定基础，经常在GitHub上活跃</li>
+    <li>项目经历：参与设计了bb网</li>
+    <li>手机：156633692</li>
+    <li>邮箱：15628643@163.com</Li>
+  </ul>
+  </div>
+  <div>
+    <p class="p1">个人期望：</p>
+    <ul class="p2">
+      <li>期望城市：上海、武汉、杭州</li>
+      <li>加入部门：web前端攻防部门</li>
+      
+    </ul>
+  </div>
+  <div>
+    <p class="p1">实习经历：</p>
+    <ul class="p2">在中天资产担任前端工程师</ul>
+  </div>
+  <div>
+    <p class="p1">个人技能：</p>
+    <ul class="p2">
+      <li>cet4、cet6</li>
+      <li>对基本的办公软件熟悉，熟悉一些基本的脚本语言，如python c</li>
+    </ul>
+  </div>
+  <div>
+    <p class="p1">私信留言： </p>
+    <textarea id="text" placeholder="在这里留下你最想说的话吧！"></textarea>
+    <button id ="send">SEND!</button>
+  </div>
+  <script>
+    document.getElementById("send").onclick = function() {
+      var saying = document.getElementById("text").value;
+        console.log(saying);
+    }
+  </script>
+  </body>
+</html>

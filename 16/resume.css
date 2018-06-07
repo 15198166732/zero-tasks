@@ -1,0 +1,22 @@
+h1{
+  color:red;
+  font-size:30px;
+text-align:center;
+   
+}
+.p1{
+  font-family:黑体
+  font-size:30;
+  color: white;
+	background: gray;
+	text-align: left;
+}
+.p2{
+  font-family:微软雅黑;
+  font-size:20px;
+  
+}
+textarea{
+	width:800px;
+	height:200px;
+}
