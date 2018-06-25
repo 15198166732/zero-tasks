@@ -1,0 +1,45 @@
+44 lines (41 sloc)  1.04 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 480px;
+            height:480px;
+            overflow: hidden;
+            background: url("erik_ce204002.jpg") no-repeat 0 -2px;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="btn-start">开始动画</button>
+    <script>
+        var odiv=document.getElementById("box");
+        var start=document.getElementById("btn-start");
+        var num=0;
+        var timer=null;
+        var f=false;
+        start.onclick=function(){
+            if(f){
+                return ;
+            }
+            f=true;
+            timer=setInterval(function(){
+                num++;
+                if(num>16){
+                    odiv.style.backgroundPositionY="-2px";
+                    num=0;
+                }else{
+                    odiv.style.backgroundPositionY=-480*num+(-2)+"px";
+                }        
+            },150);
+        }
+        
+    </script>
+</body>
+</html>
